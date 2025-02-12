@@ -1,0 +1,18 @@
+// filepath: /c:/Users/SPARTAN PC/Documents/react-native-projects/my-app/tsconfig.json
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "declarations.d.ts"
+  ]
+}
