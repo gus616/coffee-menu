@@ -7,8 +7,10 @@ import { Link } from 'expo-router';
 
 import { Colors } from '@/constants/Colors';
 
+
+
 export default function ContactScreen() {
-  const colorScheme = Appearance.getColorScheme();
+  const colorScheme: string | null = Appearance.getColorScheme() ?? null;
 
   const theme = colorScheme === 'dark' ? Colors.dark : Colors.light;
 
@@ -60,7 +62,7 @@ export default function ContactScreen() {
   );
 }
 
-function createStyles(theme: any , colorScheme: any) {
+function createStyles(theme: { background: string; text: string }, colorScheme: string | null) {
   return StyleSheet.create({
     container: {
       backgroundColor: theme.background,
