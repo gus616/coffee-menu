@@ -15,8 +15,14 @@ const app = () => {
       >
         <Text style={styles.title}>Coffee Shop</Text>
 
-         <MenuScreen /> 
-     
+        {/*        <MenuScreen /> */}
+
+        <Link href="/menu" style={{ marginHorizontal: 'auto', marginBottom: 20 }} asChild>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>Our Menu</Text>
+          </Pressable>
+        </Link>
+
         <Link href="/contact" style={{ marginHorizontal: 'auto' }} asChild>
           <Pressable style={styles.button}>
             <Text style={styles.buttonText}>Contact Us</Text>
